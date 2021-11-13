@@ -24,6 +24,24 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btnOk.setOnClickListener {
+
+//            확인 버튼이 눌리면 실행해줄 일.
+
+//            1. edtContent에 타이핑 해준 문구 (text)가 무엇인가? -> 변수에 저장.
+//            EditText의 text속성에 들어있는 값을 String 형태로 변환해서 변수에 저장.
+//            String 변환 : String이 다루기 편함
+            val inputContent = edtContent.text.toString()
+
+            Log.d("입력내용", inputContent)
+
+//            2. txtContent에 변수에 저장해둔 물구를 -> text 속성에 대입 (문구변경)
+            txtContent.text = inputContent
+
+
+
+        }
+
 
 
 
